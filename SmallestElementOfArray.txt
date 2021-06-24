@@ -1,0 +1,16 @@
+import java.util.*;
+public class SmallestElementOfArray
+{
+ public static void main(String args[])
+ {
+ int [] initializedArray = new int[]{30, 54, 32, 87, 64,74};
+ System.out.println("Given Array");
+ for(int i=0;i<initializedArray.length; i++)
+ {
+ System.out.println(initializedArray[i]);
+ }
+ Array.sort(initializedArray);
+ int minValue = initializedArray[0];
+ System.out.println("Smallest element in given array" +minValue);
+ }
+}
