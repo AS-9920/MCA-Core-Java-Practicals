@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Conversion
+{
+public static void main(String args[])
+{
+float fahrenheit,celsius;
+Scanner sc= new Scanner(System.in);
+System.out.println("Enter Temperature in 
+Fahranite");
+fahrenheit = sc.nextFloat();
+sc.close();
+celsius = ((fahrenheit-32)*5)/9;
+System.out.print("Temperature converted to celcius" 
++celsius);
+}
+}

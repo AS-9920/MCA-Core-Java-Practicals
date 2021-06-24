@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Factorial
+{
+public static void main(String args[])
+{
+int num;
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter number to find 
+factorial");
+num = scanner.nextInt();
+scanner.close();
+long factorial = findFact(num);
+System.out.println("Factorial of the 
+number:"+num+"="+factorial);
+}
+public static long findFact(int num)
+{if(num>=1)
+{
+return num*findFact(num-1);
+}
+else
+{
+return 1;
+}
+}
+}
